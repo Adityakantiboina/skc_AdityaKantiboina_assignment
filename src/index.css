@@ -1,0 +1,193 @@
+/* Chat container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #ffecd2, #fcb69f);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Chat title */
+.chat-title {
+  font-size: 2.5rem;
+  color: #ff6600;
+  text-shadow: 2px 2px 0px #fff;
+}
+
+.chat-subtitle {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Chat box */
+.chat-box {
+  width: 90%;
+  max-width: 500px;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Chat messages */
+.chat-messages {
+  height: 300px;
+  overflow-y: auto;
+  border-bottom: 2px dashed #ff6600;
+  padding: 10px;
+}
+
+/* Chat message bubbles */
+.chat-message {
+  display: flex;
+  margin: 8px 0;
+}
+
+.user-message {
+  justify-content: flex-end;
+}
+
+.ai-message {
+  justify-content: flex-start;
+}
+
+.chat-bubble {
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 70%;
+}
+
+.user-message .chat-bubble {
+  background: #ffcc00;
+  color: black;
+}
+
+.ai-message .chat-bubble {
+  background: #00ccff;
+  color: white;
+}
+
+/* Input area */
+.chat-input-area {
+  display: flex;
+  margin-top: 10px;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ff6600;
+  font-size: 1rem;
+}
+
+.chat-send-btn {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: #ff6600;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.chat-send-btn:hover {
+  background: #ff3300;
+}
+
+
+/* Home Page Styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #ffecb3, #ffb74d);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Title */
+.home-title {
+  font-size: 3rem;
+  color: #ff5722;
+  text-shadow: 3px 3px 0px #fff;
+  margin-bottom: 10px;
+  animation: bounce 1.5s infinite alternate;
+}
+
+/* Subtitle */
+.home-subtitle {
+  font-size: 1.4rem;
+  color: #4e342e;
+  max-width: 600px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Fun animation */
+.home-animation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tutor-image {
+  width: 200px;
+  height: auto;
+  animation: shake 2s infinite;
+  border-radius: 40px;
+}
+
+/* Playful button */
+.home-button {
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  background: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.home-button:hover {
+  background: #e64a19;
+  transform: scale(1.1);
+}
+
+/* Bouncing title animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Shaking animation */
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
